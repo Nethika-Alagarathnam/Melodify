@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Melodify</title>
+</head>
+
+<body>
+  <img class="coverImg" src="images/img1.jpg" alt="Cover Image">
+
+  <div class="left-panel">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Logo" class="logo-image">
+      <h1 class="site-heading">Melodify</h1>
+    </div>
+    <p class="site-description">Discover, listen, and enjoy the tracks guys!</p>
+    <ul class="song-list">
+      <li>
+        <div class="song-info">
+          <p class="song-name">Chammak Challo</p>
+          <p class="song-artist">Vishal-Shekhar</p>
+        </div>
+      </li>
+      <li>
+        <div class="song-info">
+          <p class="song-name">Illuminati</p>
+          <p class="song-artist">Sushin Shyam, Dabzee</p>
+        </div>
+      </li>
+      <li>
+        <div class="song-info">
+          <p class="song-name">Calm Down</p>
+          <p class="song-artist">Rema</p>
+        </div>
+      </li>
+      <li>
+        <div class="song-info">
+          <p class="song-name">Gasolina</p>
+          <p class="song-artist">Daddy Yankee</p>
+        </div>
+      </li>
+      <li>
+        <div class="song-info">
+          <p class="song-name">Shape of You</p>
+          <p class="song-artist">Ed Sheeran</p>
+        </div>
+      </li>
+    </ul>
+    <div class="developer-info">
+      <p>Dev by <span>Nethika</span></p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="top-bar">
+      <span class="material-symbols-rounded">expand_more</span>
+      <span>Now Playing</span>
+      <span class="material-symbols-rounded">more_horiz</span>
+    </div>
+    <div class="music-image">
+      <img src="images/img1.jpg" alt="Music Image">
+    </div>
+    <div class="music-titles">
+      <p class="name">6 Shots - NEFFEX</p>
+      <p class="artist">NEFFEX</p>
+    </div>
+    <div class="progress-details">
+      <div class="progress-bar">
+        <span></span>
+      </div>
+      <div class="time">
+        <span class="current">0:00</span>
+        <span class="final">5:30</span>
+      </div>
+    </div>
+    <div class="control-btn">
+      <span class="material-symbols-rounded" id="repeat">repeat</span>
+      <span class="material-symbols-rounded" id="prev">skip_previous</span>
+      <span class="material-symbols-rounded play-pause">play_arrow</span>
+      <span class="material-symbols-rounded" id="next">skip_next</span>
+      <span class="material-symbols-rounded" id="shuffle">shuffle</span>
+    </div>
+  </div>
+
+  <audio src="music/music1.mp3" class="main-song"></audio>
+  <script src="js/songs.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
