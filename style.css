@@ -28,7 +28,7 @@ body {
 
 .left-panel {
   position: absolute;
-  top: 87%;
+  top: 92%;
   left: 100px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.5);
@@ -119,7 +119,6 @@ body {
 .developer-info span {
   font-weight: bold;
   font-family: 'Georgia', sans-serif;
-
 }
 
 .content {
@@ -245,4 +244,87 @@ body {
 
 .control-btn span:active {
   box-shadow: inset 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .left-panel {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 20px;
+    padding: 30px;
+    max-width: none;
+  }
+
+  .content {
+    margin-left: auto;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .music-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .site-heading {
+    font-size: 36px;
+  }
+
+  .site-description {
+    font-size: 15px;
+  }
+
+  .song-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .song-name {
+    margin-bottom: 5px;
+  }
+
+  .control-btn span {
+    width: 35px;
+    height: 35px;
+  }
+
+  .progress-details {
+    height: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-panel {
+    margin: 10px;
+    padding: 30px;
+  }
+
+  .content {
+    width: 95%;
+  }
+
+  .music-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .site-heading {
+    font-size: 20px;
+  }
+
+  .site-description {
+    font-size: 14px;
+  }
+
+  .control-btn span {
+    width: 30px;
+    height: 30px;
+  }
+
+  .progress-details {
+    height: 3px;
+  }
 }
